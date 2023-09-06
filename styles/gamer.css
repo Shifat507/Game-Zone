@@ -12,7 +12,7 @@ nav {
     align-items: center;
 }
 
-.navber {
+.navbar {
     display: flex;
     justify-content: space-between;
 }
@@ -39,6 +39,8 @@ ul {
 .banner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
     margin: 0px 120px;
 }
 
@@ -59,7 +61,7 @@ ul {
 }
 
 .banner-info {
-    padding-top: 180px;
+    /* padding-top: 180px; */
     text-align: justify;
 }
 
@@ -99,4 +101,55 @@ ul {
     color: #534C64;
     font-size: 12px;
     font-weight: 400;
+}
+
+.hide{
+    display: none;
+}
+/* Make responsive */
+/* mobile device  */
+
+@media screen and (max-width: 576px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px 50px;
+        padding: 0px 120px;
+        align-items: center;
+    }
+    .navbar ul{
+        padding: 0px;
+    }
+    .navbar ul li{
+        font-size: 15px;
+    }
+    /* Banner */
+    .banner{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 50px 50px;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 1rem;
+    }
+
+    #goat-text-banner{
+        font-size: 4rem;
+    }
+    .banner-utilities{
+        text-align: center;
+    }
+    .banner-img img{
+        height: 350px;
+        margin: auto;
+    }
+    .banner-img{
+        padding: 0px;
+    }
+}
+
+
+/* Tablet */
+@media screen {
+    
 }
