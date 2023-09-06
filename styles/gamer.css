@@ -97,59 +97,80 @@ ul {
     text-align: end;
 }
 
+.characters img {
+    width: 700px;
+
+}
+
 .gamers-description {
     color: #534C64;
     font-size: 12px;
     font-weight: 400;
 }
 
-.hide{
+.hide {
     display: none;
 }
+
 /* Make responsive */
 /* mobile device  */
 
-@media screen and (max-width: 576px){
-    .navbar{
+@media screen and (max-width: 576px) {
+    .navbar {
         flex-direction: column;
         justify-content: center;
-        margin: 50px 50px;
+        /* margin: 50px 50px; */
+        margin: auto;
         padding: 0px 120px;
         align-items: center;
     }
-    .navbar ul{
+
+
+    .navbar ul {
         padding: 0px;
     }
-    .navbar ul li{
+
+    .navbar ul li {
         font-size: 15px;
     }
+
     /* Banner */
-    .banner{
+    .banner {
         grid-template-columns: repeat(1, 1fr);
         margin: 50px 50px;
         text-align: center;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 1rem;
     }
 
-    #goat-text-banner{
+    #goat-text-banner {
         font-size: 4rem;
     }
-    .banner-utilities{
+
+    .banner-utilities {
         text-align: center;
     }
-    .banner-img img{
-        height: 350px;
+
+    .banner-img img {
+        height: 300px;
         margin: auto;
     }
-    .banner-img{
+
+    .banner-img {
         padding: 0px;
+    }
+    .gamers{
+        flex-direction: column;
+        text-align: center;
+        margin: 50px 50px;
+    }
+    .characters img{
+        width: 100%;
     }
 }
 
 
 /* Tablet */
-@media screen {
-    
-}
+@media screen {}
