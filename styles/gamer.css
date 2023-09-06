@@ -112,6 +112,48 @@ ul {
     display: none;
 }
 
+/* Funny videos */
+.funny-videos{
+    margin-top: 50px;
+}
+.funny-videos-heading{
+    text-align: center;
+}
+.video-section{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 10px; */
+    margin: 10px 120px;
+}
+.video-section .video img{
+    width: 250px;
+}
+/*  */
+.instant-play{
+    margin: 100px 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px 10px 50px;
+}
+.instant-play-title{
+    width: 300px;
+    text-align: right;
+    padding-bottom: 250px;
+}
+.collapse-pic{
+    position: relative;
+}
+.collapse-pic img{
+    position: relative;
+    top: -210px;
+}
+.collapse-pic img{
+    position: relative;
+    left: -100px;
+}
+
+
 /* Make responsive */
 /* mobile device  */
 
@@ -169,6 +211,22 @@ ul {
     .characters img{
         width: 100%;
     }
+    .video-section{
+        flex-direction: column;
+    }
+    .video-section .video  img{
+        width: 100%;
+    }
+    .instant-play{
+        flex-direction: column;
+    }
+    .instant-play-image {
+        
+    }
+    .rider{
+        margin: 10px 100px;
+    }
+
 }
 
 
