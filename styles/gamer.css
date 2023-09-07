@@ -10,6 +10,7 @@ nav {
     display: flex;
     gap: 5px;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar {
@@ -19,6 +20,7 @@ nav {
 
 .nav-item ul li {
     list-style: none;
+    cursor: pointer;
 }
 
 ul {
@@ -128,9 +130,14 @@ ul {
 .video-section .video img{
     width: 250px;
 }
+.video img:hover{
+    border: 2px solid #FF42A5;
+    border-radius: 15px;
+
+}
 /*  */
 .instant-play{
-    margin: 100px 130px;
+    margin: 100px 130px 20px 130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -151,6 +158,64 @@ ul {
 .collapse-pic img{
     position: relative;
     left: -100px;
+}
+/* Game Types */
+.games-type{
+    padding: 120px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+}
+.games{   
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background: white;
+}
+.games:hover{
+    border: 2px solid #FF42A5;
+}
+footer{
+    padding: 120px;
+    background: #0B0223;
+}
+.footer-links a{
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* Footer */
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.social-links{
+    padding: 50px 240px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+.others{
+    display: flex;
+    justify-content: center;
+}
+.others a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    margin-left: 30px;
 }
 
 
@@ -226,9 +291,16 @@ ul {
     .rider{
         margin: 10px 100px;
     }
+    .games-type, .footer-links{
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 }
 
 
 /* Tablet */
-@media screen {}
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .games-type{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
